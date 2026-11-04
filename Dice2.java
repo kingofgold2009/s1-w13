@@ -11,8 +11,9 @@ public class Dice2 {
    }
 
    public int nextRoll( ) {
-      // You supply this code.
-return -1; 
+      int x = 0;
+      x = randGen.nextInt(6) + 1 + randGen.nextInt(6) + 1;
+      return x; 
    }
 	
    public void tester (int howMany) {

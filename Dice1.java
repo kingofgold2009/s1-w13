@@ -9,8 +9,8 @@ public class Dice1{
    }
 
    public int nextRoll( ) {
-      // You supply this code.
-      return -1;
+      return randGen.nextInt(6) + 1;
+
    }
 
 
@@ -21,6 +21,9 @@ public class Dice1{
 	     k = k + 1;
 	  }
    }
-   
+   public static void main(String[] args) {
+      Dice1 d = new Dice1();
+      d.tester(1000);
+   }
   
 }
