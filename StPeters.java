@@ -23,7 +23,7 @@ public class StPeters
         while(counter < howMany)
         {
            pot = 1;
-           if(runGame() <= this.entryFee)
+           if(runGame() >= this.entryFee)
                 countBreakEvenOrWin++;
            counter++;
         }
@@ -35,7 +35,6 @@ public class StPeters
         int pot = 1;
         while(flip() == 0){
             pot *= 2;
-            return pot;
         }
         return pot;
     }
